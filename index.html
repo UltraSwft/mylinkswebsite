@@ -1,15 +1,141 @@
-<html>
-    <h1>
-        Welcome to UltraSwifts Super Secret Website
-    </h1>
-    <body>
-        <h2>About me</h2>
-        <p>
-            I am a loser
-        </p>
-        <h2>What's this website?</h2>
-        <p>
-            It's a pretty cool webpage that not many people have seen before.
-        </p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraSwift</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Saira:wght@800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-family: 'Saira', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 0 0 1px transparent, 0 1px 2px rgb(0 0 0 / 50%);
+        }
+
+        body >img {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        section {
+            display: grid;
+            place-items: center;
+            position: absolute;
+            inset: 0;
+            overflow-y: scroll;
+        }
+        
+        section div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section > div {
+            padding: 100px 10px;
+        }
+
+        section div img {
+            width: 100px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            box-shadow: 0 0 8px 1px lightblue;
+        }
+
+        a {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px solid white;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            gap: 20px;
+            align-items: center;
+            border-radius: 4px;
+            transition-duration: 200ms;
+        }
+
+        a:hover {
+            background: white;
+            color: #0f172a;
+        }
+
+        a i {
+            font-size: 1.3em;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <img src="https://i.imgur.com/020Jafl.png" alt="bg" />
+    <section>
+        <div>
+            <img src="https://p19-pu-sign-useast8.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/e94247f490f63cf0b723790a402606b6~c5_1080x1080.jpeg?lk3s=a5d48078&nonce=25424&refresh_token=6fbc84a09b7e0767a7b80f982d8268a2&x-expires=1724767200&x-signature=Qbp5dB6fHVJPVKs0qvVhQBHuXWY%3D&shp=a5d48078&shcp=81f88b70" alt="dp" />
+            <h2>UltraSwift</h2>
+            <div>
+                <a href="https://www.youtube.com/ultraswift/">
+                    <i class="fa-brands fa-youtube"></i>
+                    <p>Youtube</p>
+                </a>
+                <a href="https://www.tiktok.com/@aaronultraswift">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <p>Tiktok</p>
+                </a>
+                <a href="https://www.instagram.com/aaron_ultraswift/">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>Instagram</p>
+                </a>
+                <a href="https://x.com/UltraSwift_/">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <p>X/Twitter</p>
+                <a href="https://www.twitch.tv/ultraswift_/">
+                    <i class="fa-brands fa-twitch"></i>
+                    <p>Twitch</p>
+                <a href="https://paypal.me/UltraSwagster/">
+                    <i class="fas fa-donate"></i>
+                    <p>Donate</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
